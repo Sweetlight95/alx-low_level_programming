@@ -1,12 +1,16 @@
 #include "main.h"
+
 /**
-* mul - multiply 2 int
-* @a: first int
-* @b: second int
-* Return: result of multiplication
+* print_numbers -print from 0to 9
+* Return: Always 0
 */
 
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	int a = 0;
+
+	while (a < 10)
+		_putchar(a++ + '0');
+
+	_putchar('\n');
 }
