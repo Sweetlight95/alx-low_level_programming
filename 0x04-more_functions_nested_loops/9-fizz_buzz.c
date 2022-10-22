@@ -1,9 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
 * main - print fizzbuzz
 * Return: Always 0
 */
+
 int main(void)
 {
 	int i;
