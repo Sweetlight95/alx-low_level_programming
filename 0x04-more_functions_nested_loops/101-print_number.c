@@ -1,9 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
 * print_number - prints an intger
 * @n: input integer parameter
-* Owned by Bwave ICT / Bright Daniel
+* Owned by Sweetlight95
 */
+
 void print_number(int n)
 {
 	unsigned int i, j, count;
