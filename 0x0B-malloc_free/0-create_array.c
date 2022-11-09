@@ -23,10 +23,10 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		position = 0;
+		i = 0;
 		while (i < size)
 		{
-			*(buffer + position) = c;
+			*(buffer + i) = c;
 			i++;
 		}
 
