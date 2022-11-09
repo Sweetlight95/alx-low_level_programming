@@ -17,11 +17,19 @@ char *create_array(unsigned int size, char c)
 	}
 
 	buffer = (char *)malloc(sizeof(char) * size);
-	if (buffer == NULL)
+	if (buffer == 0)
+	{
 		return (NULL);
+	}
+	else
+	{
+		position = 0;
+		while (i < size)
+		{
+			*(buffer + position) = c;
+			i++;
+		}
 
-	for (i = 0; i < size; i++)
-		array[i] = c;
-
-	return (buffer);
+		return (buffer);
+	}
 }
