@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
 * create_array - array for print a string
 * @size: array number element
@@ -8,15 +9,15 @@
 char *create_array(unsigned int size, char c)
 {
 	char *buffer;
-	unsigned int position;
+	unsigned int i;
 
 	if (size == 0)
 	{
 		return (NULL);
 	}
 
-	array = (char *)malloc(sizeof(char) * size);
-	if (array == NULL)
+	buffer = (char *)malloc(sizeof(char) * size);
+	if (buffer == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
